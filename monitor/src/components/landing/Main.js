@@ -1,5 +1,6 @@
 import React from "react";
 import { gsap } from "gsap";
+
 const { useLayoutEffect, useRef } = React;
 
 document.addEventListener('mousemove', move);
@@ -38,7 +39,7 @@ function Main() {
       <section className="home" id="home">
         <div className="home__container bd-grid">
           <div className="home__img">
-            {/* <img src="https://cdn.dribbble.com/users/725005/screenshots/16460679/dashboard-widgets_4x.png" alt="" data-speed="-2" className="move"></img> */}
+            <img src="https://cdn.discordapp.com/attachments/829111617752793119/1066657903257337897/banner1.jpg" alt="" data-speed="-2" className="move"></img>
             {/* <img src="https://raw.githubusercontent.com/bedimcode/responsive-landing-page-coffee3d/master/assets/img/img2.png" alt="" data-speed="2" className="move"></img>
             <img src="https://raw.githubusercontent.com/bedimcode/responsive-landing-page-coffee3d/master/assets/img/img3.png" alt="" data-speed="2" className="move"></img>
             <img src="https://raw.githubusercontent.com/bedimcode/responsive-landing-page-coffee3d/master/assets/img/img4.png" alt="" data-speed="-2" className="move"></img>
@@ -47,8 +48,8 @@ function Main() {
           </div>
 
           <div className="home__data">
-            <h1 className="home__title">Sipwise</h1>
-            <p className="home__description">Monitor your water intake and stay hydrated <br /> quick and easy.</p>
+            <h1 className="home__title"> Sipwise </h1>
+            <p className="home__description"> Monitor your water intake and stay hydrated <br /> quick and easy.</p>
             <a href="/signup" className="home__button">Get Started</a>
           </div>
         </div>
