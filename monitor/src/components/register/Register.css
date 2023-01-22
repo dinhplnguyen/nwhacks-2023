@@ -1,118 +1,121 @@
-.container {
-
-    /* font-family: arial;
-    font-size: 24px;
-    margin: 25px; */
-    width: 100%;
-    height: 100%;
-    /* outline: dashed 1px black; */
-    /* Setup */
-    position: relative;
-
+.myStyle {
+  position: relative;
+  background-color: #60a5fa;
+  height: 100vh;
+  font-size: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
+.container {
+  /* font-family: arial;
+    font-size: 24px;
+    margin: 25px; */
+  width: 100%;
+  height: 100%;
+  /* outline: dashed 1px black; */
+  /* Setup */
+  position: relative;
+}
 
 .whiteBox {
-    position: absolute;
-    top: 120px;
-    left: 550px;
-    width: 30%;
-    height: 85%;
-    border-radius: 25px;
-    margin: -50px 0 0 -50px;
-    background-color: rgb(100, 205, 207);
-    background-position: center;
-    /* background-size: 30px 30px; */
-
+  position: absolute;
+  top: 120px;
+  left: 550px;
+  width: 30%;
+  height: 85%;
+  border-radius: 25px;
+  margin: -50px 0 0 -50px;
+  background-color: rgb(100, 205, 207);
+  background-position: center;
+  /* background-size: 30px 30px; */
 }
 
 .loginFont {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 37px;
-    font-size: xx-large;
-    font-weight: bold;
-    font-family: sans-serif, arial, sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 37px;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: sans-serif, arial, sans-serif;
 }
 
 .usernameDiv {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .usernameTextBox {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(248, 248, 248);
-    top: 87px;
-    border: black;
-    border-width: 0 0 2px;
-    border-color: black;
-    height: 35px;
-    /* border-top-style: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+  top: 87px;
+  border: black;
+  border-width: 0 0 2px;
+  border-color: black;
+  height: 35px;
+  /* border-top-style: hidden;
     border-left-style: hidden;
     border-right-style: hidden; */
-    border-bottom-color: black;
-    border-block-color: rgb(243, 204, 204);
-    border-radius: 3px;
-    font-size: 15px;
+  border-bottom-color: black;
+  border-block-color: rgb(243, 204, 204);
+  border-radius: 3px;
+  font-size: 15px;
 }
 
 .passwordDiv {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .passwordTextBox {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(248, 248, 248);
-    top: 115px;
-    border: black;
-    border-width: 0 0 2px;
-    border-color: black;
-    height: 35px;
-    /* border-top-style: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+  top: 115px;
+  border: black;
+  border-width: 0 0 2px;
+  border-color: black;
+  height: 35px;
+  /* border-top-style: hidden;
     border-left-style: hidden;
     border-right-style: hidden; */
-    border-bottom-color: black;
-    border-block-color: rgb(243, 204, 204);
-    border-radius: 3px;
-    font-size: 15px;
+  border-bottom-color: black;
+  border-block-color: rgb(243, 204, 204);
+  border-radius: 3px;
+  font-size: 15px;
 }
 
 .forgotPasswordDiv {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .forgotYourPassword {
-    position: relative;
-    top: 121px;
-    font-size: 10px;
-    left: 75px;
-    color: black;
-    text-decoration: none;
+  position: relative;
+  top: 121px;
+  font-size: 10px;
+  left: 75px;
+  color: black;
+  text-decoration: none;
 }
 
 .loginButtonDiv {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .loginButton {
-    position: relative;
-    top: 140px;
-    height: 30px;
-    width: 275px;
-    border-radius: 30px;
-    font-family: sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    color: white;
-    background-color: rgb(165, 203, 216);
-
+  position: relative;
+  top: 140px;
+  height: 30px;
+  width: 275px;
+  border-radius: 30px;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  background-color: rgb(165, 203, 216);
 }

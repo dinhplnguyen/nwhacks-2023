@@ -31,7 +31,7 @@ function About() {
       <about ref={app}>
         <section>
           <div class="about__row">
-          <h1 className="about__title"> Our Team </h1>
+            <h1 className="about__title"> Our Team </h1>
           </div>
           <div class="about__row">
 
