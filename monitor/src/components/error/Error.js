@@ -4,8 +4,8 @@ import "./Error.css";
 import Navbar from "../navbar/Navbar";
 
 import React from "react";
-import { gsap } from "gsap";
-const { useLayoutEffect, useRef } = React;
+const { useRef } = React;
+
 
 
 
@@ -13,29 +13,33 @@ function Error() {
 
   const app = useRef();
 
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-
-      gsap.from('.row', { opacity: 0, duration: 1.3, delay: 0.5, y: 30 })
-      gsap.from('.about__column', { opacity: 0, duration: 1, delay: 0.8, y: 50 })
-
-    }, app);
-    return () => ctx.revert();
-  }, []);
-
-
+  
   return (
     <>
       <Navbar />
-      <about ref={app}>
-        <section>
-          <div class="img-container">
-            <img src="" />
+      <error ref={app}>
+      <section>
+          <div class="about__row">
+          <h1 className="about__title"> Error </h1>
+          </div>
+          <div class="about__row">
+
+            
+
+           {/* <div class="about__column">
+              <div class="about__card"> */}
+                <div class="error-container">
+                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/error.png?token=GHSAT0AAAAAAB5XG2PH4GY2VTKFGPLG4JNQY6NHTBA" />
+                </div>
+              {/* </div>
+            </div> */}
           </div>
         </section>
-      </about>
+      </error>
+
+      
     </>
   );
 }
 
-export default About;
+export default Error;
