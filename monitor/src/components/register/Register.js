@@ -17,7 +17,7 @@ function Register() {
 
     <div className="container">
 
-      <div style={myStyle}>
+      <div className="myStyle">
         <div className="whiteBox">
           <div className="loginFont">Sign Up</div>
 
