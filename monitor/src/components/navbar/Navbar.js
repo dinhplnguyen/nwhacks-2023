@@ -46,7 +46,7 @@ function Navigation() {
             <li className="nav__item vertical-line"></li>
             <li className="nav__item auth">
               <a href="/login" className="nav__link">Login</a>
-              <a href="/signup" className="navigation__login_button">Start free</a>
+              <a href="/register" className="navigation__login_button">Start free</a>
             </li>
           </ul>
         </div>
