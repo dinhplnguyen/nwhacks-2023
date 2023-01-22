@@ -97,3 +97,6 @@ h1 {
     padding: 0 1em;
   }
 }
+.about__title {
+  color: var(--white-color);
+}
