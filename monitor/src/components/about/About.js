@@ -89,7 +89,7 @@ function About() {
                   <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-3.png?token=GHSAT0AAAAAAB5XG2PG5X2K75AEI4AL54QGY6NFOHQ" />
                 </div>
                 <h3>Rafi Meher</h3>
-                <p>Designer</p>
+                <p>Developer</p>
                 <div class="icons">
                   <a href="#">
                     <i class="fab fa-twitter"></i>
