@@ -9,18 +9,29 @@ import { auth } from "./firebase-config";
 
 import Navbar from "../navbar/Navbar";
 
+import { readUserData } from "./firebase-config";
 
 function Login() {
 	const [loginEmail, setLoginEmail] = useState("");
 	const [loginPassword, setLoginPassword] = useState("");
 
 	const [user, setUser] = useState({});
+	const [weight, setWeight] = useState(0);
+
+	const getUserData = async () => {
+		if (user) {
+			const data = await readUserData(user.uid);
+			setWeight(data.weight);
+		}
+	};
 
 	useEffect(() => {
 		onAuthStateChanged(auth, (currentUser) => {
 			setUser(currentUser);
 		});
-	}, [user]);
+		getUserData();
+		console.log(weight);
+	}, [user, weight, getUserData]);
 
 	const login = async (e) => {
 		e.preventDefault();
@@ -49,6 +60,8 @@ function Login() {
 			{
 				user ? (<>
 					<button className="logoutButton" onClick={logout}>Logout</button>
+					<p> Welcome {user.email} </p>
+					<p> You are {weight} kg </p>
 				</>
 				) :
 					(
