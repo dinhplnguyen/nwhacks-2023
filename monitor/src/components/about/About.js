@@ -109,7 +109,7 @@ function About() {
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="profile-img-3.png" />
+                  <img src="...../misc/profile-img-1.png" />
                 </div>
                 <h3>Zeke Eteve</h3>
                 <p>Developer</p>

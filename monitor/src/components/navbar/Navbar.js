@@ -21,7 +21,7 @@ function Navigation() {
     <header className="l-header">
       <nav className="nav bd-grid">
         <div>
-          <a href="/" className="nav__logo">Sipwise</a>
+          <a href="/" className="nav__logo">SipWise</a>
         </div>
 
         <div className="nav__toggle" id="nav-toggle" onClick={showMenu}>
