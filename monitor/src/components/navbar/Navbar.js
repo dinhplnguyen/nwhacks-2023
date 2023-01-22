@@ -39,9 +39,9 @@ function Navigation() {
 
           </div>
 
-          <ul className="nav__list">
-            <li className="nav__item item"><a href="/" className="nav__link active">Home</a></li>
-            <li className="nav__item"><a href='/about' className="nav__link">About</a></li>
+          <ul className="nav__list auth ">
+            <li className="nav__item"><a href="/" className="nav__link active">Home</a></li>
+            <li className="nav__item"><a href='/about' className="nav__link">Our Team</a></li>
             <li className="nav__item vertical-line"></li>
             <li className="nav__item auth">
               <a href="/login" className="nav__link">Login</a>
