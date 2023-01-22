@@ -5,7 +5,7 @@ import Register from "./register/Register";
 import User from "./user/User";
 import Navbar from "./navbar/Navbar";
 import Error from "./404/404";
-import Thirsty from "thirsty/Thirsty";
+import Thirsty from "./thirsty/Thirsty";
 
 import Login2 from "./login/Login2"
 

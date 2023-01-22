@@ -27,6 +27,10 @@
     background-position: center;
 }
 
+.spanTextAndBox {
+    font-family: sans-serif, Arial, sans-serif;
+}
+
 .waterStatementDiv {
     top: 10px;
     left: 10px;
@@ -35,8 +39,9 @@
 
 .waterButton {
     position: absolute;
-    left: 100px;
-    height: 20px;
-    width: 40px;
+    top: 60%;
+    left: 35%;
+    height: 50px;
+    width: 300px;
 
 }
