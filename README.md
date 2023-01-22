@@ -12,6 +12,7 @@ Use the package manager [npm](https://www.npmjs.com/) to install Sipwise.
 npm install
 
 # run the project on port localhost:3000
+cd monitor
 npm run start
 ```
 
