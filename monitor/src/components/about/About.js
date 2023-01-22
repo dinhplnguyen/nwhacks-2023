@@ -8,6 +8,10 @@ import React from "react";
 import { gsap } from "gsap";
 const { useLayoutEffect, useRef } = React;
 
+const image1  = "https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-1.png?token=GHSAT0AAAAAAB5XG2PHKUY7ZWX4BYQYL36YY6NSKAA";
+const image2  = "";
+const image3  = "https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-3.png?token=GHSAT0AAAAAAB5XG2PGNXOHQFKFDCXUJJ5QY6NSKAQ";
+const image4  = "https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-4.png?token=GHSAT0AAAAAAB5XG2PGNAPXQYFOATEXSETKY6NSKBA";
 
 
 function About() {
@@ -38,7 +42,7 @@ function About() {
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-1.png?token=GHSAT0AAAAAAB5XG2PHYNYFOPWIQN5WXNZWY6NFNCA" />
+                  <img src= {image1} />
                 </div>
                 <h3>Dinh Phi Long Nguyen</h3>
                 <p>King/Lord</p>
@@ -62,7 +66,7 @@ function About() {
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-2.png?token=GHSAT0AAAAAAB5XG2PGU2C4VXTBWNAGGQLYY6NFNUQ" />
+                  <img src= {image2} />
                 </div>
                 <h3>Jeff Kim</h3>
                 <p>Developer</p>
@@ -86,7 +90,7 @@ function About() {
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-3.png?token=GHSAT0AAAAAAB5XG2PG5X2K75AEI4AL54QGY6NFOHQ" />
+                  <img src= {image3} />
                 </div>
                 <h3>Rafi Meher</h3>
                 <p>Developer</p>
@@ -110,7 +114,7 @@ function About() {
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-4.png?token=GHSAT0AAAAAAB5XG2PG5B24QEKKYAPRZ4QGY6NFOIA" />
+                  <img src= {image4} />
                 </div>
                 <h3>Zeke Eteve</h3>
                 <p>Developer</p>
