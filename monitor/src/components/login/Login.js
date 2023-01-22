@@ -3,6 +3,7 @@ import image from "./img/bg0.jpg"
 
 
 function Login() {
+
     const myStyle = {
         position: 'relative',
         backgroundImage: `url(${image})`,
@@ -12,6 +13,7 @@ function Login() {
         backgroundRepeat: 'no-repeat'
     };
     return (
+
 
         <div className="container">
 
@@ -24,7 +26,7 @@ function Login() {
                     </div>
 
                     <div className="passwordDiv">
-                        <input className="passwordTextBox" id="Password" name="Password" placeholder="Type Your Password" size="35" />
+                        <input className="passwordTextBox" type="Password" id="Password" name="Password" placeholder="Type Your Password" size="35" />
                     </div>
 
                     <div className="forgotPasswordDiv">
