@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 const { useLayoutEffect, useRef } = React;
 
 const image1  = "https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-1.png?token=GHSAT0AAAAAAB5XG2PHKUY7ZWX4BYQYL36YY6NSKAA";
-const image2  = "";
+const image2  = "https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-2.png?token=GHSAT0AAAAAAB5XG2PHFMSEJEOB6QWP7JJAY6NSWBQ";
 const image3  = "https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-3.png?token=GHSAT0AAAAAAB5XG2PGNXOHQFKFDCXUJJ5QY6NSKAQ";
 const image4  = "https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-4.png?token=GHSAT0AAAAAAB5XG2PGNAPXQYFOATEXSETKY6NSKBA";
 
