@@ -1,6 +1,11 @@
 import "./Register.css";
 
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { signUp } from "../auth/auth";
+function Register() {
+  return (
+    <div className="register">
+      <h1>Register</h1>
+    </div>
+  );
+}
 
+export default Register;

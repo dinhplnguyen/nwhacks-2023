@@ -21,22 +21,20 @@ const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
 const db = getFirestore(app);
 
+// create the sign up function with firebase 
 const signUp = async (email, password) => {
   try {
-    const userCredential = await createUserWithEmailAndPassword(
-      auth,
-      email,
-      password
-    );
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
-    await addDoc(collection(db, "users"), {
-      uid: user.uid,
-      email: user.email,
-    });
-    return true
+    console.log("user", user);
+    return user;
   } catch (error) {
-    return { error: error.message }
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log("error", errorCode, errorMessage);
+    return null;
   }
 };
+
 
 export { signUp }
