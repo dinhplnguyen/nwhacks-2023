@@ -9,6 +9,7 @@ import { gsap } from "gsap";
 const { useLayoutEffect, useRef } = React;
 
 
+
 function About() {
 
   const app = useRef();
@@ -30,14 +31,14 @@ function About() {
       <about ref={app}>
         <section>
           <div class="about__row">
-            <h1>Our Team</h1>
+          <h1 className="about__title"> Our Team </h1>
           </div>
           <div class="about__row">
 
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="profile-img-1.png" />
+                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-1.png?token=GHSAT0AAAAAAB5XG2PHYNYFOPWIQN5WXNZWY6NFNCA" />
                 </div>
                 <h3>Dinh Phi Long Nguyen</h3>
                 <p>King/Lord</p>
@@ -61,7 +62,7 @@ function About() {
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="profile-img-2.png" />
+                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-2.png?token=GHSAT0AAAAAAB5XG2PGU2C4VXTBWNAGGQLYY6NFNUQ" />
                 </div>
                 <h3>Jeff Kim</h3>
                 <p>Developer</p>
@@ -85,7 +86,7 @@ function About() {
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="profile-img-3.png" />
+                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-3.png?token=GHSAT0AAAAAAB5XG2PG5X2K75AEI4AL54QGY6NFOHQ" />
                 </div>
                 <h3>Rafi Meher</h3>
                 <p>Developer</p>
@@ -109,7 +110,7 @@ function About() {
             <div class="about__column">
               <div class="about__card">
                 <div class="img-container">
-                  <img src="profile-img-3.png" />
+                  <img src="https://raw.githubusercontent.com/dinhplnguyen/nwhack-2023/main/misc/profile-img-4.png?token=GHSAT0AAAAAAB5XG2PG5B24QEKKYAPRZ4QGY6NFOIA" />
                 </div>
                 <h3>Zeke Eteve</h3>
                 <p>Developer</p>

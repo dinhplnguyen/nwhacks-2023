@@ -48,7 +48,7 @@ function Main() {
           </div>
 
           <div className="home__data">
-            <h1 className="home__title"> Sipwise </h1>
+            <h1 className="home__title"> SipWise </h1>
             <p className="home__description"> Monitor your water intake and stay hydrated <br /> quick and easy.</p>
             <a href="/signup" className="home__button">Get Started</a>
           </div>

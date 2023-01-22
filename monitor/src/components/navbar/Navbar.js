@@ -21,7 +21,7 @@ function Navigation() {
     <header className="l-header">
       <nav className="nav bd-grid">
         <div>
-          <a href="/" className="nav__logo">Sipwise</a>
+          <a href="/" className="nav__logo">SipWise</a>
         </div>
 
         <div className="nav__toggle" id="nav-toggle" onClick={showMenu}>
@@ -42,6 +42,7 @@ function Navigation() {
           <ul className="nav__list auth ">
             <li className="nav__item"><a href="/" className="nav__link active">Home</a></li>
             <li className="nav__item"><a href='/about' className="nav__link">Our Team</a></li>
+            <li className="nav__item"><a href='/error' className="nav__link">Error</a></li>
             <li className="nav__item vertical-line"></li>
             <li className="nav__item auth">
               <a href="/login" className="nav__link">Login</a>

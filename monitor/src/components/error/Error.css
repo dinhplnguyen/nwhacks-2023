@@ -39,12 +39,9 @@ h1 {
   transition: 0.3s;
   background-color: #ffffff;
 }
-.about__card .img-container {
+.error-container {
   width: 8em;
   height: 8em;
-  background-color: var(--first-color-dark);
-  padding: 0.5em;
-  border-radius: 50%;
   margin: 0 auto 2em auto;
 }
 .about__card img {
@@ -76,8 +73,8 @@ h1 {
   background: linear-gradient(#6045ea, #8567f7);
   color: #ffffff;
 }
-.about__card:hover .img-container {
-  transform: scale(1.15);
+.error-container {
+  transform: scale(1.5);
 }
 @media screen and (min-width: 768px) {
   section {
