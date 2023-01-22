@@ -9,7 +9,6 @@ import { Landing, About, Login, Register, Login2, Thirsty } from './components/C
 function App() {
   return (
     <div className="App">
-
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Landing />} />

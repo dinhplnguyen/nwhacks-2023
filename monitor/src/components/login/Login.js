@@ -1,52 +1,105 @@
+import { useState, useEffect } from "react";
+import {
+	signInWithEmailAndPassword,
+	onAuthStateChanged,
+	signOut,
+} from "firebase/auth";
 import "./Login.css";
-import image from "./img/bg0.jpg"
+import { auth } from "./firebase-config";
+
+import Navbar from "../navbar/Navbar";
 
 
 function Login() {
+	const [loginEmail, setLoginEmail] = useState("");
+	const [loginPassword, setLoginPassword] = useState("");
 
-    const myStyle = {
-        position: 'relative',
-        backgroundImage: `url(${image})`,
-        height: '100vh',
-        fontSize: '50px',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
-    };
-    return (
+	const [user, setUser] = useState({});
 
+	useEffect(() => {
+		onAuthStateChanged(auth, (currentUser) => {
+			setUser(currentUser);
+		});
+	}, [user]);
 
-        <div className="container">
+	const login = async (e) => {
+		e.preventDefault();
+		try {
+			const user = await signInWithEmailAndPassword(
+				auth,
+				loginEmail,
+				loginPassword
+			);
+			console.log(user);
+			window.location.href = "/";
+		} catch (error) {
+			console.log(error.message);
+		}
+	};
 
-            <div style={myStyle}>
-                <div className="whiteBox">
-                    <div className="loginFont">Login</div>
+	const logout = async () => {
+		await signOut(auth);
+		// return user to main page
+		window.location.href = "/";
+	};
 
-                    <div className="usernameDiv">
-                        <input className="usernameTextBox" id="Username" name="Username" placeholder="Type Your Username" size="35" />
-                    </div>
+	return (
+		<>
+			{
+				user ? (
+					<button className="loginButtonDiv" onClick={logout}>Logout</button>
+				) :
+					(
+						<>
+							<Navbar />
+							<div className="container">
 
-                    <div className="passwordDiv">
-                        <input className="passwordTextBox" type="Password" id="Password" name="Password" placeholder="Type Your Password" size="35" />
-                    </div>
+								<div className="myStyle">
+									<div className="whiteBox">
+										<div className="loginFont">Login</div>
 
-                    <div className="forgotPasswordDiv">
-                        <a className="forgotYourPassword" target="_blank" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgradschool.oregonstate.edu%2Fhelp%2Ffaq%2F784&psig=AOvVaw0_meRYtqe7goATeSKYJ0yc&ust=1674461107626000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjdr-_b2vwCFQAAAAAdAAAAABAJ">Forgot Your Password?</a>
-                    </div>
+										<form onSubmit={login}>
+											<div className="usernameDiv">
+												<input
+													className="usernameTextBox"
+													onChange={(e) => setLoginEmail(e.target.value)}
+													id="Username"
+													name="Username"
+													placeholder="Type Your Username"
+													size="35" />
+											</div>
 
-                    <div className="loginButtonDiv">
-                        <a href="https://en.datosjam.net.pe/wp-content/uploads/2022/11/portada_overflow-4.jpg" target="_blank">
-                            <button className="loginButton">LOGIN</button>
-                        </a>
-                    </div>
+											<div className="passwordDiv">
+												<input
+													className="passwordTextBox"
+													onChange={(e) => setLoginPassword(e.target.value)}
+													type="Password"
+													id="Password"
+													name="Password"
+													placeholder="Type Your Password"
+													size="35" />
+											</div>
 
-                </div>
+											<div className="forgotPasswordDiv">
+												<a className="forgotYourPassword" target="_blank" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgradschool.oregonstate.edu%2Fhelp%2Ffaq%2F784&psig=AOvVaw0_meRYtqe7goATeSKYJ0yc&ust=1674461107626000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjdr-_b2vwCFQAAAAAdAAAAABAJ">Forgot Your Password?</a>
+											</div>
 
-            </div>
-        </div >
+											<div className="loginButtonDiv">
+												<a href="https://en.datosjam.net.pe/wp-content/uploads/2022/11/portada_overflow-4.jpg" target="_blank">
+													<button className="loginButton">LOGIN</button>
+												</a>
+											</div>
+										</form>
+									</div>
 
+								</div>
+							</div >
+						</>
+					)
+			}
 
-
-    )
+		</>
+	)
 }
 
 export default Login;
