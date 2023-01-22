@@ -4,7 +4,7 @@
 
 Sipwise is a Web Application that helps user keep track of their water intake and stay hydrated through the day.
 
-It can be difficult to tell how much water we really should be drinking throughout the day. Traditional advice of having '8 glasses a day' did not take into account differences in weight, activity level, water content through rest of diet (food and drinks), or even the general climate around the person^1. Going by thirst is a better indicator, but people may still want to improve their hydration levels. 
+It can be difficult to tell how much water we really should be drinking throughout the day. Traditional advice of having '8 glasses a day' did not take into account differences in weight, activity level, water content through rest of diet (food and drinks), or even the general climate around the person <sup>1</sup>. Going by thirst is a better indicator, but people may still want to improve their hydration levels. 
 
 This tool was made to simplify that process somewhat, so that people can get a better idea of if they might need to drink more/less water. 
 
