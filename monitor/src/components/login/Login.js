@@ -45,13 +45,15 @@ function Login() {
 
 	return (
 		<>
+			<Navbar />
 			{
-				user ? (
-					<button className="loginButtonDiv" onClick={logout}>Logout</button>
+				user ? (<>
+					<button className="logoutButton" onClick={logout}>Logout</button>
+				</>
 				) :
 					(
 						<>
-							<Navbar />
+
 							<div className="container">
 
 								<div className="myStyle">

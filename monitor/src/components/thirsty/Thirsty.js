@@ -1,5 +1,5 @@
 import "./Thirsty.css"
-import image from "../login/img/thirsty.jpg"
+// import image from "../login/img/thirsty.jpg"
 
 function Thirsty() {
 
