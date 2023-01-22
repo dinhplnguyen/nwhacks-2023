@@ -2,9 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
-// import Login from "./components/login/Login";
 
-import { Landing, About, Login, Register, Login2, Thirsty, Error } from './components/Components';
+import { Landing, About, Login, Register, Thirsty, Error } from './components/Components';
 
 function App() {
   return (
