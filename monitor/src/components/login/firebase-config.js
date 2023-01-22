@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getDatabase, ref, set } from "firebase/database";
-import { collection, doc, setDoc } from "firebase/firestore"; // or 'firebase/firestore' in the web build
+import { getDatabase, ref, set, child, get, onValue } from "firebase/database";
+import { collection, doc, setDoc } from "firebase/firestore";
 
 
 const firebaseConfig = {
@@ -24,6 +24,26 @@ function writeUserData(userId, email, weight) {
     weight: weight
   });
 }
+
+// read data from firebase database: user's weight
+function readUserData(userId) {
+  const db = getDatabase();
+  get(ref(db, 'users/' + userId)).then((snapshot) => {
+    if (snapshot.exists()) {
+      console.log(snapshot.val());
+      return snapshot.val();
+    } else {
+      console.log("No data available");
+      return 0;
+    }
+  }
+  ).catch((error) => {
+    console.error(error);
+  }
+  );
+}
+
 // get database from firebase firestore
 export const db = getDatabase(app);
-export { auth, writeUserData, doc, setDoc, collection };
+export { auth, doc, setDoc, collection };
+export { writeUserData, readUserData }
