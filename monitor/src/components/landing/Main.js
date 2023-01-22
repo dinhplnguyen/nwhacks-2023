@@ -21,9 +21,6 @@ function Main() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
 
-      gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 1, delay: 2, y: 10 })
-      gsap.from('.nav__item', { opacity: 0, duration: 1, delay: 2.1, y: 30, stagger: 0.3, })
-
       gsap.from('.home__title', { opacity: 0, duration: 1, delay: 0.8, y: 30 })
       gsap.from('.home__description', { opacity: 0, duration: 1, delay: 1.0, y: 30 })
       gsap.from('.home__button', { opacity: 0, duration: 1, delay: 1.3, y: 30 })
@@ -40,11 +37,6 @@ function Main() {
         <div className="home__container bd-grid">
           <div className="home__img">
             <img src="https://cdn.discordapp.com/attachments/829111617752793119/1066657903257337897/banner1.jpg" alt="" data-speed="-2" className="move"></img>
-            {/* <img src="https://raw.githubusercontent.com/bedimcode/responsive-landing-page-coffee3d/master/assets/img/img2.png" alt="" data-speed="2" className="move"></img>
-            <img src="https://raw.githubusercontent.com/bedimcode/responsive-landing-page-coffee3d/master/assets/img/img3.png" alt="" data-speed="2" className="move"></img>
-            <img src="https://raw.githubusercontent.com/bedimcode/responsive-landing-page-coffee3d/master/assets/img/img4.png" alt="" data-speed="-2" className="move"></img>
-            <img src="https://raw.githubusercontent.com/bedimcode/responsive-landing-page-coffee3d/master/assets/img/img5.png" alt="" data-speed="-2" className="move"></img>
-            <img src="https://raw.githubusercontent.com/bedimcode/responsive-landing-page-coffee3d/master/assets/img/img6.png" alt="" data-speed="2" className="move"></img> */}
           </div>
 
           <div className="home__data">
