@@ -25,6 +25,7 @@ npm run start
 Create an account to keep personal weight and water intake calculation 
 
 ## Language and Tools
+- [Ideas dumps](https://docs.google.com/document/d/1Y9rcPVSoDDuW5K6p96kb4RSO0-6bRXnfRudMVy4bKqA/edit?usp=sharing)
 - HTML5 / CSS / JS
 - ReactJs
 - Firebase Database / Authentication / Domain Hosting
